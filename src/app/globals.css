@@ -5,3 +5,10 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.all-chars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 2rem;
+}

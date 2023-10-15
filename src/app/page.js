@@ -1,8 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <main>
+      <header className='relative header bg-rick-morty-bg h-[80vh]'>
+        <div className='overlay absolute top-0 left-0 right-0  h-[80vh]'></div>
+      </header>
       <div className='header-content p-8'>
         <h1 className='text-2xl text-center'>Rick & Morty</h1>
         <p className='px-8 pt-8'>
