@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Roboto_Mono } from "next/font/google";
 import Link from "next/link";
+import Footer from "./components/Footer";
 
 const roboto = Roboto_Mono({
   subsets: ["latin"],
@@ -15,8 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={roboto.className}>
-        <header className='relative header bg-rick-morty-bg h-screen'>
-          <div className='overlay absolute top-0 left-0 right-0 h-screen bg'>
+        <header className='relative header bg-rick-morty-bg h-[80vh]'>
+          <div className='overlay absolute top-0 left-0 right-0  h-[80vh]'>
             <nav className='navbar text-white'>
               <ul className='flex p-8 gap-4 justify-center item-center'>
                 <li className='text-xl'>
@@ -36,6 +37,8 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         {children}
+
+        <Footer />
       </body>
     </html>
   );
